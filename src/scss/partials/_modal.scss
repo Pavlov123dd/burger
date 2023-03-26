@@ -1,0 +1,117 @@
+
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal-window {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  justify-content: start;
+  row-gap: 30px;
+  max-width: 500px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(104deg, rgba(0, 228, 254, 1) 10%, rgba(0, 139, 246, 1) 70%);
+  box-shadow: -5px 2px 10px #2A2A2A;
+  @media (max-width: $mobile-width) {
+    max-width: 350px;
+    height: 450px;
+    row-gap: 10px;
+  }
+
+  &__tittle3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.close-modal {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    top: 13px;
+    right: 1px;
+    background-color: #fff;
+    rotate: (45deg);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    top: 13px;
+    right: 1px;
+    background-color: #fff;
+    rotate: (-45deg);
+  }
+}
+
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  width: fit-content;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &:nth-child(2) {
+      margin-bottom: 50px;
+      @media (max-width: $mobile-width) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__button {
+    padding: 5px 10px;
+    background-color: #F6E224;
+    border-radius: 10px;
+    font: 600 22px/26px Poppins;
+
+    &:hover {
+      box-shadow: -5px 2px 10px #2A2A2A;
+    }
+  }
+}
+
+.modal-window-active {
+  display: flex;
+}
