@@ -48,7 +48,7 @@ const initMap = () => {
         let marker = new google.maps.Marker({
             position: properties.coordinates,
             map: myMap,
-            icon: '../img/burger%20point.png'
+            icon: 'img/burger%20point.png'
         });
 
         if (properties.image) {
