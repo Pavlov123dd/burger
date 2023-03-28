@@ -40,7 +40,7 @@ const initMap = () => {
     let markers =
         {
             coordinates: {lat: 46.524297, lng: 6.633062},
-            info: '<br><img src="../img/burger%20point.png"><br>'
+            info: '<br><img src="img/burger%20point.png"><br>'
         };
 
 
