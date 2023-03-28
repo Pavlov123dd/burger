@@ -714,10 +714,13 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
   position: relative;
 }
+.burger-card__tittle3 {
+  white-space: nowrap;
+}
 @media (max-width: 767px) {
   .burger-card {
-    width: 366px;
-    height: 340px;
+    width: 350px;
+    height: 324px;
   }
 }
 .burger-card__tittle3 {
