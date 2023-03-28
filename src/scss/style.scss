@@ -6,7 +6,6 @@ body {
   font: 18px/27px Poppins, sans-serif;
   color: $main-text-color;
   font-weight: 400;
-  max-width: 1950px;
   padding: 0;
 
 }
@@ -314,7 +313,7 @@ body {
 
 .banner {
   padding: 142px 0 0;
-  background: url("../img/baner gradient.jpg") no-repeat;
+  background: url("../img/baner gradient.jpg") no-repeat center;
   height: 605px;
   position: relative;
   width: 100%;
@@ -327,6 +326,7 @@ body {
   &__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
     @media (max-width: $table-width) {
       justify-content: center;
     }
@@ -335,8 +335,8 @@ body {
 
 .banner__img {
   position: absolute;
-  top: 50px;
-  right: 215px;
+  top: -100px;
+  right: 30px;
   @media (max-width: $table-width) {
     display: none;
   }
@@ -567,9 +567,12 @@ body {
   border-radius: 26px;
   box-shadow: 0 3px 6px #00000029;
   position: relative;
+  &__tittle3{
+    white-space: nowrap;
+  }
   @media (max-width: $mobile-width) {
-    width: 366px;
-    height: 340px;
+    width: 350px;
+    height: 324px;
   }
 
   &__tittle3 {
