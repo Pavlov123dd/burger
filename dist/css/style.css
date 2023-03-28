@@ -128,7 +128,7 @@ button {
   flex-direction: column;
   text-align: center;
   justify-content: start;
-  width: fit-content;
+  width: 100%;
 }
 .modal-form__label {
   display: flex;
